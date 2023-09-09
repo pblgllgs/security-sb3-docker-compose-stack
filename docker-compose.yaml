@@ -42,7 +42,7 @@ services:
 
   frontend:
     container_name: react-app-frontend
-    image: pblgllgs/security-sb3-frontend:1.0.0
+    image: pblgllgs/security-sb3-frontend:1.0.1-git-portainer
     ports:
       - "80:80"
     expose:
