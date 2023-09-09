@@ -48,7 +48,7 @@ services:
     expose:
       - "80"
     healthcheck:
-      test: "curl --fail http://localhost"
+      test: "curl --fail http://frontend"
       interval: 2s
       timeout: 5s
       retries: 5
