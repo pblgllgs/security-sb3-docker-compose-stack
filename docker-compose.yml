@@ -47,6 +47,9 @@ services:
       - "80:80"
     expose:
       - "80"
+    environment:
+      VITE_API_BASE_URL: "http://backend:8080"
+      VITE_API_BASE_URL_AUTH: "http://backend:8080"
     healthcheck:
       test: "curl --fail http://frontend"
       interval: 2s
