@@ -42,7 +42,7 @@ services:
 
   frontend:
     container_name: react-app-frontend
-    image: nginx:1.23.1
+    image: pblgllgs/security-sb3-frontend:1.0.1
     ports:
       - "80:80"
     expose:
@@ -55,9 +55,6 @@ services:
     environment:
       VITE_API_BASE_URL: "http://backend:8080"
       VITE_API_BASE_URL_AUTH: "http://backend:8080"
-    volumes:
-      - ./html:/var/www/pblgllgs/html
-      - ./config:/etc/nginx/conf.d
     depends_on:
       backend:
         condition: service_healthy
