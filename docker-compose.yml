@@ -21,7 +21,7 @@ services:
 
   backend:
     container_name: spring-app-backend
-    image: pblgllgs/security-sb3:1.0.0
+    image: pblgllgs/security-sb3-backend:1.0.0
     environment:
       SPRING_DATASOURCE_USERNAME: postgres
       SPRING_DATASOURCE_PASSWORD: password
